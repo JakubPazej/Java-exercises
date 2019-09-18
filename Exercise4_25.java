@@ -1,9 +1,11 @@
 public class Exercise4_25{
-  public static void sumSeries(int n){
-    int sum = 0;
-    for(i=0;i<n;i++){
-      sum += i;
-    }
-    return sum;
+  public static double sumSeries(double n){
+     double result=0, b=1, c=0;
+     for(int i = 0; i<n; i++){
+         result= result+b+c;
+         b++;
+         c++;
+        }
+     return result;
   }
 }

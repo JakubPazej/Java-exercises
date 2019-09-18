@@ -15,7 +15,7 @@ public class Exercise2_13{
       saved*=(1+monthlyInterest);
       i++;
     }
-    System.out.println("After the sixth month, the account value is " 
+    System.out.println("After the sixth month, the account value is $" 
                       + Math.floor(saved * 100)/100);
   }
 }
