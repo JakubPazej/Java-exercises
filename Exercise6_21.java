@@ -1,4 +1,4 @@
-import java.util.scanner;
+import java.util.Scanner;
 public class Exercise6_21{
   public static void main(String[] args){
     Scanner scanner = new Scanner (System.in);
@@ -11,16 +11,17 @@ public class Exercise6_21{
     String choice2 = scanner.next();
     int[] slots = new int[Integer.parseInt(choice2)];
     System.out.println("");
-
+    
+    int sum =0;
     for(int i=0;i<balls;i++){
       for(int k=0;k<Integer.parseInt(choice2)-1;k++){
-        int r = Math.random()*2;
-        int sum = 0;
+        int r = (int)(Math.random()*2);
+        sum = 0;
         if(r>1){
-          System.out.print("R")
+          System.out.print("R");
           sum++;
         }else{
-          System.out.print("L")
+          System.out.print("L");
         }
       }
       slots[sum] += slots[sum];
@@ -36,18 +37,15 @@ public class Exercise6_21{
           slots[n]--;
         }
       }
-      if (n == slots.length){
-        n=0;
         counter++;
-      }
     }
 
     for(int l =0; l<slots.length; l++){
       for(int d=0; d<slots.length; d++){
         if(d==0){
-          System.out.print("|")
+          System.out.print("|");
         }
-        System.out.print(histogram[slots.length-l][n] + "|");
+        System.out.print(histogram[slots.length-l][d] + "|");
       }
     }
   }

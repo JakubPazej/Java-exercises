@@ -1,4 +1,4 @@
-import java.util.scanner;
+import java.util.Scanner;
 public class Exercise7_9{
   public static void main(String[] args){
     String[][] board = new String[3][3]

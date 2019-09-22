@@ -1,11 +1,14 @@
 public class Exercise4_25{
   public static double sumSeries(double n){
-     double result=0, b=1, c=0;
-     for(int i = 0; i<n; i++){
-         result= result+b+c;
-         b++;
-         c++;
-        }
+     double a=1, b=1, result=0;
+     while(a<=n){
+         b=1;
+         while(b<=a){
+             result=result+b;
+             b++;
+         }
+         a++;
+     }
      return result;
   }
 }
