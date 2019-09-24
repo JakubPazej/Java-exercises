@@ -15,16 +15,17 @@ public class Exercise6_21{
     int sum =0;
     for(int i=0;i<balls;i++){
       for(int k=0;k<Integer.parseInt(choice2)-1;k++){
-        int r = (int)(Math.random()*2);
+        double r = Math.random();
         sum = 0;
-        if(r>1){
+        if(r>0.495){
           System.out.print("R");
           sum++;
         }else{
           System.out.print("L");
         }
       }
-      slots[sum] += slots[sum];
+      System.out.print("\n");
+      slots[sum] = slots[sum]+1;
     }
     System.out.println("");
 

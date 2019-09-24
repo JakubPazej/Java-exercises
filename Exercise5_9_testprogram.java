@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.NumberFormat;
 public class Exercise5_9_testprogram{
     public static void main(String[] args){
         Exercise5_9 a = new Exercise5_9();
@@ -7,7 +6,6 @@ public class Exercise5_9_testprogram{
         double i = 1;
         System.out.println("Feet    Meters    Meters    Feet");
         System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
-        NumberFormat formatter = new DecimalFormat("#0.000");
         for(int row=0; row<10; row++){
            table[row][0] = i;
            table[row][1] = a.footToMeter(i);
